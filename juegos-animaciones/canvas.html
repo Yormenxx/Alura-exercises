@@ -1,7 +1,7 @@
 
 //Es ua pizarra por tanto definimos el alto y ancho 
 
-<canvas width="600px" hight="600px">
+<canvas width="600px" height="600px">
 
 
 
@@ -17,11 +17,46 @@
   var $pincel = pantalla.getContext("2d")
 
 //creando un reactangulo o figura geometrica
+  //$pincel.FillStyle = "lightGrey"
+  //$pincel.FillRect(0,0,500,600)
+  
+  $pincel.FillStyle = "green"
+  $pincel.FillRect(0,0,200,600)
+  
+  $pincel.FillStyle= "red"
+  $pincel.FillRect(400,0,200,600)
+  
+  
+  
+  
+  /**/
+  
+  
   $pincel.FillStyle = "lightGrey"
   $pincel.FillRect(0,0,500,600)
   
   $pincel.FillStyle = "green"
-  $pincel.FillRect(0,0,20,600)
+  $pincel.FillRect(0,0,200,600)
+  
+  $pincel.FillStyle= "red"
+  $pincel.FillRect(400,0,200,600)
+  
+  //Haciendo un triangulo
+  
+  $pencil.FillStyle= "yellow"
+  $pencil.BeginPath();
+  $pencil.moveTo(300,300)
+  $pencil.lineTo(200,600)
+  $pencil.lineTo(400,600)
+  $pencil.Fill()
 
+  //Haciendo un circulo 
+  
+  
+  $pencil.FillStyle= "blue"
+  $pencil.BeginPath();
+  $pencil.arc(300,300,50,0,2*3.14)
+  $pencil.Fill()
+  
 
 </script>
