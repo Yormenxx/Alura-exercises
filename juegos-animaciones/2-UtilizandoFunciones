@@ -23,12 +23,13 @@ function dibujarcuadrado(x,y,color){
 
 dibujarcuadrado(0,0,"green")
 dibujarcuadrado(0,50,"green")
-dibujarcuadrado(0,""reen")
+dibujarcuadrado(0,100,"green")
 
 let x = 0;
 
 while(x<600){
-  dibujarcuadrado(x,)
+  dibujarcuadrado(x,0,"green")
+  x +=50;
 }
 
 
