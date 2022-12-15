@@ -1,7 +1,35 @@
 
 
+$pincel.Strokestyle="black"
+
+$pincel.fillrect(0,0,50,50)
+$pincel.strokerect(0,0,50,50)
 
 
+//Una funcion generica me permite pasar por parametros las unidades que se necesitan para relaizar la figura
+
+
+function dibujarcuadrado(x,y,color){
+
+  let $pantalla = document.querySelector("canvas")
+  let $pencil = $pantalla.getContext("2d")
+  
+  $pencil.fillstyle=color
+  $pencil.fillrect(x,y,50,50)
+  $pencil.strokestyle="black"
+  $pencil.strokerect(x,y,50,50)
+
+}
+
+dibujarcuadrado(0,0,"green")
+dibujarcuadrado(0,50,"green")
+dibujarcuadrado(0,""reen")
+
+let x = 0;
+
+while(x<600){
+  dibujarcuadrado(x,)
+}
 
 
 
