@@ -1,0 +1,29 @@
+
+
+<canvas width="600px " height="400px">
+
+
+</canvas>
+
+
+<script>
+  
+  let $pantalla = document.querySelector("canvas")
+  
+  let $pencil = $pantalla.getContext("2d")
+  
+  
+  function dibujarCirculo (x,y,radio){
+    
+    $pencil.fillstyle="blue"
+    $pencil.beginpath();
+    $pencil.arc(x,y,radio,0,2*Math.PI)
+    $pencil.fill()
+   }
+
+
+  dibujarCirculo(10,20,20)
+
+
+</script>
+
