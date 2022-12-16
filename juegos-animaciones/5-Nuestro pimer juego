@@ -1,1 +1,22 @@
 
+let $pantalla = document.querySelector("canvas");
+let $pincel = $pantalla.getContext("2d");        
+$pincel.fillStyle = "lightgrey";
+$pincel.fillRect(0,0,600,400); 
+
+function diseñarCircunferencia(x,y,radio,color){
+    $pincel.fillStyle = color;
+    $pincel.beginPath();
+    $pincel.arc(x,y,radio,0,2*Math.PI);
+    $pincel.fill();
+}    
+
+function limpiarPantalla(){
+
+    $pincel.clearRect(0,0,600,400);
+
+}
+
+diseñarCircunfernecia(100,80,100,"red")
+diseñarCircunfernecia(100,80,60,"white")
+diseñarCircunfernecia(100,80,20,"red")
