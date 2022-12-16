@@ -1,5 +1,5 @@
 
-
+<script>
 $pincel.Strokestyle="black"
 
 $pincel.fillrect(0,0,50,50)
@@ -33,6 +33,6 @@ while(x<600){
 }
 
 
-
+</script>
 
 
