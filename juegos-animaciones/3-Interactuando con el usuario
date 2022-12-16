@@ -1,0 +1,58 @@
+
+$pantalla = document.queryselector("canvas")
+
+$pencil = pantalla.getcontext("2d")
+
+$pencil.fillstyle = "grey"
+
+$pencil.fillRect(0,0,600,400)
+
+function exhibirClick(evento){
+  console.log(evento)
+  alert(hiciste un click)
+}
+
+$pantalla.oncLick = exhibirClick;
+
+
+/*****/
+
+
+
+
+$pantalla = document.queryselector("canvas")
+
+$pencil = pantalla.getcontext("2d")
+
+$pencil.fillstyle = "grey"
+
+$pencil.fillRect(0,0,600,400)
+
+function exhibirClick(evento){
+  let x = evento.pageX - $pantalla.offsetleft;
+  let y = evento.pageY - $pantalla.offsetTop;
+  console.log(evento)
+  alert(x + "," + y)
+}
+
+function dibujarCirculo(evento){
+  let x = evento.pageX - $pantalla.offsetleft;
+  let y = evento.pageY - $pantalla.offsetTop;
+  
+  $pencil.fillstyle="blue"
+  $pencil.beginPath()
+  $pencil.arc(x,y,10,0,2*3.14)
+  $pencil.fill()
+  
+}
+
+$pantalla.oncLick = dibujarCirculo;
+
+
+
+
+
+
+
+
+
